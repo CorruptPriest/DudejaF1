@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dudeja F1</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=IBM+Plex+Serif:wght@400;600&display=swap"
+        rel="stylesheet">
+    <!-- Using a dot matrix font from Google Fonts if available, or a fallback -->
+    <link href="https://fonts.cdnfonts.com/css/dot-matrix" rel="stylesheet">
+</head>
+
+<body>
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <div class="grid-overlay"></div>
+
+    <header>
+        <nav>
+            <div class="logo">DUDEJA (F1)</div>
+            <ul>
+                <li><a href="#hero" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#machines" class="nav-link">Machines</a></li>
+                <li><a href="#timeline" class="nav-link">Timeline</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="hero-content">
+                <h1 class="glitch" data-text="AADISH DUDEJA">AADISH DUDEJA</h1>
+                <p class="subtitle">RB19 DOMINANCE</p>
+                <div class="scroll-indicator">SCROLL</div>
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="container">
+                <h2>(1) ABOUT</h2>
+                <div class="about-content">
+                    <p class="lead n-serif">Aadish Dudeja is a professional disruptor who treats high-stakes debate like
+                        a personal laboratory for social friction. He doesn't just participate in Model UN; he thrives
+                        in the deliberate engineering of diplomatic turbulence to see who breaks first. His writing,
+                        specifically <em>Nothing Happens Randomly</em>, is less of a guide and more of a manifesto on
+                        finding the underlying structure within total disorder. Whether he’s presiding over a mock court
+                        or deconstructing human judgment, Aadish is consistently at the center of the storm, proving
+                        that the most interesting truths only surface when things get chaotic.</p>
+                    <div class="specs-grid">
+                        <div class="spec-item">
+                            <span class="label">DRIVER</span>
+                            <span class="value">AADISH DUDEJA</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="label">TEAM</span>
+                            <span class="value">RED BULL RACING</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="label">CAR</span>
+                            <span class="value">RB19</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="label">WINS</span>
+                            <span class="value">19/22</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="machines">
+            <!-- RB19 -->
+            <div class="machine-card" id="rb19-container">
+                <div class="machine-header">
+                    <h3>(2.1) RB19</h3>
+                </div>
+
+                <!-- Machine Frame -->
+                <div class="machine-frame">
+                    <!-- Sketchfab Embed -->
+                    <div class="sketchfab-embed-wrapper">
+                        <iframe title="Oracle Red Bull F1 Car RB19 2023" frameborder="0" allowfullscreen
+                            mozallowfullscreen="true" webkitallowfullscreen="true"
+                            allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking
+                            execution-while-out-of-viewport execution-while-not-rendered web-share
+                            src="https://sketchfab.com/models/e4afe46f3aab4b23a418da06fc163821/embed?ui_theme=dark&dnt=1&autostart=1&transparent=1">
+                        </iframe>
+                    </div>
+                </div>
+
+                <!-- Technical Flyouts -->
+                <div class="tech-overlay">
+                    <div class="tech-panel-side left">
+                        <div class="tech-label">AERO</div>
+                        <div class="tech-data">MAX DOWNFORCE</div>
+                        <div class="tech-label" style="margin-top: 2rem;">WINS</div>
+                        <div class="tech-data">21/22</div>
+                    </div>
+                    <div class="tech-panel-side right">
+                        <div class="tech-label">SEASON</div>
+                        <div class="tech-data">2023</div>
+                        <div class="tech-label" style="margin-top: 2rem;">POLES</div>
+                        <div class="tech-data">14</div>
+                    </div>
+                    <div class="tech-panel-bottom">
+                        <div class="tech-stat">
+                            <span class="label">ENGINE</span>
+                            <span class="value">HONDA RBPTH001</span>
+                        </div>
+                        <div class="tech-stat">
+                            <span class="label">WEIGHT</span>
+                            <span class="value">798 KG</span>
+                        </div>
+                        <div class="tech-stat">
+                            <span class="label">POWER</span>
+                            <span class="value">~1000 HP</span>
+                        </div>
+                        <div class="tech-stat">
+                            <span class="label">FASTEST LAPS</span>
+                            <span class="value">11</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hotspots (Overlaid on top if needed, but Sketchfab has its own annotations usually. Keeping for now but might conflict with interaction) -->
+                <div class="hotspots-container" style="pointer-events: none;">
+                    <!-- Hotspots might be redundant with Sketchfab, but keeping as requested structure -->
+                    <div class="hotspot" style="top: 40%; left: 70%;"
+                        data-info="DRS: Drag Reduction System optimized for top speed.">
+                        <div class="hotspot-dot"></div>
+                        <div class="hotspot-line"></div>
+                        <div class="hotspot-label">DRS</div>
+                    </div>
+                    <div class="hotspot" style="top: 60%; left: 30%;"
+                        data-info="SIDE PODS: Aggressive undercut for maximum downforce.">
+                        <div class="hotspot-dot"></div>
+                        <div class="hotspot-line"></div>
+                        <div class="hotspot-label">AERO</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- F1-75 -->
+            <div class="machine-card" id="f1-75-container">
+                <div class="machine-header">
+                    <h3>(2.2) F1-75</h3>
+                </div>
+
+                <!-- Machine Frame -->
+                <div class="machine-frame">
+                    <!-- Sketchfab Embed -->
+                    <div class="sketchfab-embed-wrapper">
+                        <iframe title="F1-75 2022" frameborder="0" allowfullscreen mozallowfullscreen="true"
+                            webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking"
+                            xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share
+                            src="https://sketchfab.com/models/35e2cc2bd5ab4c15ad66631d0d689b48/embed?ui_theme=light&autostart=1&transparent=1">
+                        </iframe>
+                    </div>
+                </div>
+
+                <!-- Technical Flyouts -->
+                <div class="tech-overlay">
+                    <div class="tech-panel-side left">
+                        <div class="tech-label">CHASSIS</div>
+                        <div class="tech-data">CARBON FIBRE</div>
+                        <div class="tech-label" style="margin-top: 2rem;">WINS</div>
+                        <div class="tech-data">4</div>
+                    </div>
+                    <div class="tech-panel-side right">
+                        <div class="tech-label">SEASON</div>
+                        <div class="tech-data">2022</div>
+                        <div class="tech-label" style="margin-top: 2rem;">POLES</div>
+                        <div class="tech-data">12</div>
+                    </div>
+                    <div class="tech-panel-bottom">
+                        <div class="tech-stat">
+                            <span class="label">ENGINE</span>
+                            <span class="value">FERRARI 066/7</span>
+                        </div>
+                        <div class="tech-stat">
+                            <span class="label">WEIGHT</span>
+                            <span class="value">795 KG</span>
+                        </div>
+                        <div class="tech-stat">
+                            <span class="label">POWER</span>
+                            <span class="value">~1000 HP</span>
+                        </div>
+                        <div class="tech-stat">
+                            <span class="label">FASTEST LAPS</span>
+                            <span class="value">5</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hotspots-container" style="pointer-events: none;">
+                    <div class="hotspot" style="top: 30%; left: 50%;"
+                        data-info="ENGINE: Ferrari 066/7 V6 Turbo Hybrid.">
+                        <div class="hotspot-dot"></div>
+                        <div class="hotspot-line"></div>
+                        <div class="hotspot-label">POWER</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="timeline">
+            <div class="container">
+                <h2>(3) TIMELINE</h2>
+                <div class="timeline-container">
+                    <div class="timeline-item">
+                        <div class="timeline-date">APR 15, 2025</div>
+                        <div class="timeline-content">
+                            <div class="timeline-image-wrapper">
+                                <img src="assets/IMG_20250415_001248789.jpg" alt="Timeline Image">
+                            </div>
+                        </div>
+                        <div class="timeline-location">PRE DSU</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">APR 21, 2025</div>
+                        <div class="timeline-content">
+                            <div class="timeline-image-wrapper">
+                                <img src="assets/IMG-20250421-WA0022.jpg" alt="Timeline Image">
+                            </div>
+                        </div>
+                        <div class="timeline-location">DSU</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">APR 28, 2025</div>
+                        <div class="timeline-content">
+                            <div class="timeline-image-wrapper">
+                                <img src="assets/IMG_20250428_153533970.jpg" alt="Timeline Image">
+                            </div>
+                        </div>
+                        <div class="timeline-location">MEENAKSHI MALL</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">MAY 03, 2025</div>
+                        <div class="timeline-content">
+                            <div class="timeline-image-wrapper">
+                                <img src="assets/IMG_20250503_174628147.jpg" alt="Timeline Image">
+                            </div>
+                        </div>
+                        <div class="timeline-location">MEENAKSHI MALL</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">MAY 20, 2025</div>
+                        <div class="timeline-content">
+                            <div class="timeline-image-wrapper">
+                                <img src="assets/IMG_20250520_144028537.jpg" alt="Timeline Image">
+                            </div>
+                        </div>
+                        <div class="timeline-location">WINDCHIMES</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">JUN 10, 2025</div>
+                        <div class="timeline-content">
+                            <div class="timeline-image-wrapper">
+                                <img src="assets/Screenshot_20250610-232729.png" alt="Timeline Image">
+                            </div>
+                        </div>
+                        <div class="timeline-location">COMUN FIT</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">OCT 15, 2025</div>
+                        <div class="timeline-content">
+                            <div class="timeline-image-wrapper">
+                                <img src="assets/IMG_20251015_205926747.jpg" alt="Timeline Image">
+                            </div>
+                        </div>
+                        <div class="timeline-location">RANDOM CALL</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">NOV 15, 2025</div>
+                        <div class="timeline-content">
+                            <div class="timeline-image-wrapper">
+                                <img src="assets/IMG_20251115_155746442.jpg" alt="Timeline Image">
+                            </div>
+                        </div>
+                        <div class="timeline-location">VEGA CITY</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">DEC 22, 2025</div>
+                        <div class="timeline-content">
+                            <div class="timeline-image-wrapper">
+                                <img src="assets/IMG_20251222_130226186.jpg" alt="Timeline Image">
+                            </div>
+                        </div>
+                        <div class="timeline-location">CHURCH STREET</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="marquee-container">
+            <div class="marquee-content">
+                <span>DUDEJA (F1) &nbsp;&bull;&nbsp; EST. 2025 &nbsp;&bull;&nbsp; AADISH DUDEJA &nbsp;&bull;&nbsp;
+                    WORLD CHAMPION &nbsp;&bull;&nbsp; DEVELOPED BY NAMAN BHOTIKA &nbsp;&bull;&nbsp; </span>
+                <span>DUDEJA (F1) &nbsp;&bull;&nbsp; EST. 2025 &nbsp;&bull;&nbsp; AADISH DUDEJA &nbsp;&bull;&nbsp;
+                    WORLD CHAMPION &nbsp;&bull;&nbsp; DEVELOPED BY NAMAN BHOTIKA &nbsp;&bull;&nbsp; </span>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="script.js"></script>
+</body>
+
+</html>
